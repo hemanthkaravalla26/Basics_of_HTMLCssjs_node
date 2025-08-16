@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML + CSS + JS Progressive Demo</title>
+
+  <style>
+    /* ===== PART 2: CSS Basics ===== */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    h2 {
+      color: darkblue;
+      text-decoration: underline;
+    }
+
+    .styled-box {
+      border: 2px solid #333;
+      background-color: white;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    a {
+      color: blue;
+    }
+    a:hover {
+      color: red;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 50%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+
+    .btn {
+      background-color: green;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Progressive HTML + CSS + JS Demo</h1>
+  <p>This page is structured for teaching: each section shows an example and explains it briefly.</p>
+  
+  <!-- =================== PART 1: HTML BASICS =================== -->
+  <h1>Part 1 — HTML Basics</h1>
+
+  <h2>1. Headings</h2>
+  <h1>Main Heading</h1>
+  <h3>Sub Heading</h3>
+  <p><em>Explanation:</em> Headings (&lt;h1&gt; to &lt;h6&gt;) are used for titles and sub-titles. H1 is largest, H6 is smallest.</p>
+
+  <h2>2. Paragraph</h2>
+  <p>This is a paragraph element. It contains blocks of text for reading.</p>
+  <p><em>Explanation:</em> Paragraphs (&lt;p&gt;) are the basic block of text in HTML.</p>
+
+  <h2>3. Link</h2>
+  <p>Visit <a href="https://www.google.com" target="_blank">Google</a></p>
+  <p><em>Explanation:</em> The &lt;a&gt; tag creates hyperlinks. <code>target="_blank"</code> opens them in a new tab.</p>
+
+  <h2>4. Image</h2>
+  <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+  <p><em>Explanation:</em> The &lt;img&gt; tag displays images. The <code>alt</code> text shows if the image fails to load.</p>
+
+  <h2>5. Lists</h2>
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+  </ul>
+  <ol>
+    <li>First</li>
+    <li>Second</li>
+  </ol>
+  <p><em>Explanation:</em> Unordered lists (&lt;ul&gt;) use bullets; ordered lists (&lt;ol&gt;) use numbers.</p>
+
+  <h2>6. Table</h2>
+  <table>
+    <tr><th>Name</th><th>Age</th></tr>
+    <tr><td>John</td><td>25</td></tr>
+    <tr><td>Jane</td><td>30</td></tr>
+  </table>
+  <p><em>Explanation:</em> Tables (&lt;table&gt;) arrange data in rows (&lt;tr&gt;) and columns (&lt;td&gt;). Headers use &lt;th&gt;.</p>
+
+  <h2>7. Form</h2>
+  <form>
+    Name: <input type="text" placeholder="Enter name"><br><br>
+    Email: <input type="email" placeholder="Enter email"><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <p><em>Explanation:</em> Forms collect user input. The <code>input</code> tag changes behavior based on <code>type</code>.</p>
+
+  <h2>8. Audio</h2>
+  <audio controls>
+    <source src="sample.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+  <p><em>Explanation:</em> The &lt;audio&gt; tag embeds audio. The <code>controls</code> attribute adds play/pause buttons.</p>
+
+  <h2>9. Video</h2>
+  <video width="320" height="240" controls>
+    <source src="sample.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video>
+  <p><em>Explanation:</em> The &lt;video&gt; tag plays videos. You can set width, height, and controls.</p>
+
+  <h2>10. Div & Span</h2>
+  <div class="styled-box">This is a styled box (div)</div>
+  <p>This is <span style="color:red;">red text</span> inside a paragraph.</p>
+  <p><em>Explanation:</em> &lt;div&gt; is a block container; &lt;span&gt; is inline, for styling parts of text.</p>
+
+  <hr>
+
+  <!-- =================== PART 2: CSS BASICS =================== -->
+  <h1>Part 2 — CSS Basics</h1>
+
+  <h2>1. Colors & Fonts</h2>
+  <p style="color:green; font-family:Verdana;">This text is green with Verdana font.</p>
+  <p><em>Explanation:</em> CSS changes appearance. <code>color</code> sets text color; <code>font-family</code> changes font style.</p>
+
+  <h2>2. Background & Borders</h2>
+  <div style="background-color:lightyellow; border:2px solid orange; padding:10px;">
+    This box has background color and a border.
+  </div>
+  <p><em>Explanation:</em> <code>background-color</code> fills the area; <code>border</code> outlines it.</p>
+
+  <h2>3. Margin & Padding</h2>
+  <div style="background-color:lightblue; margin:20px; padding:15px;">
+    This box has margin (outside space) and padding (inside space).
+  </div>
+  <p><em>Explanation:</em> <code>margin</code> adds space outside; <code>padding</code> adds space inside.</p>
+
+  <h2>4. Hover Effect</h2>
+  <a href="#">Hover over this link</a>
+  <p><em>Explanation:</em> <code>:hover</code> applies styles when the mouse is over the element.</p>
+
+  <h2>5. Styled Buttons</h2>
+  <button class="btn">Hover Me</button>
+  <p><em>Explanation:</em> Buttons can be styled with colors, padding, and hover effects.</p>
+
+  <hr>
+
+  <!-- =================== PART 3: JS BASICS =================== -->
+  <h1>Part 3 — JavaScript Basics</h1>
+
+  <h2>1. Alert on Click</h2>
+  <button onclick="showAlert()">Click Me</button>
+  <p><em>Explanation:</em> JS can respond to events like clicks. <code>alert()</code> shows a popup.</p>
+
+  <h2>2. Change Text</h2>
+  <p id="textChange">This text will change.</p>
+  <button onclick="changeText()">Change Text</button>
+  <p><em>Explanation:</em> JS can modify HTML content using <code>innerText</code>.</p>
+
+  <h2>3. Add Numbers</h2>
+  <input type="number" id="num1"> +
+  <input type="number" id="num2">
+  <button onclick="addNumbers()">Add</button>
+  <p id="result"></p>
+  <p><em>Explanation:</em> JS can read input values, perform calculations, and display results.</p>
+
+  <h2>4. Loop Example</h2>
+  <button onclick="showList()">Show Numbers 1-5</button>
+  <ul id="numberList"></ul>
+  <p><em>Explanation:</em> Loops allow repeating actions, like creating list items dynamically.</p>
+
+  <script>
+    /* ===== PART 3: JS Functions ===== */
+    function showAlert() {
+      alert("Hello! This is an alert.");
+    }
+    function changeText() {
+      document.getElementById('textChange').innerText = "Text changed!";
+    }
+    function addNumbers() {
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      document.getElementById('result').innerText = "Sum: " + (num1 + num2);
+    }
+    function showList() {
+      const list = document.getElementById('numberList');
+      list.innerHTML = "";
+      for (let i = 1; i <= 5; i++) {
+        const li = document.createElement('li');
+        li.innerText = i;
+        list.appendChild(li);
+      }
+    }
+  </script>
+
+</body>
+</html>
